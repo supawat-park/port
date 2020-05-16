@@ -38,8 +38,8 @@ class UserTableSeeder extends Seeder
 
         $manager = new User();
 	    $manager->name = 'Administrator';
-	    $manager->email = 'admin@gmail.com';
-	    $manager->password = bcrypt('Welcome1');
+	    $manager->email = 'admin';
+	    $manager->password = bcrypt('welcome');
 	    $manager->save();
         $manager->roles()->attach($admin_role);
         $manager->permissions()->attach($dashboard_view);
@@ -59,8 +59,8 @@ class UserTableSeeder extends Seeder
         
         $manager = new User();
 	    $manager->name = 'User';
-	    $manager->email = 'user@gmail.com';
-	    $manager->password = bcrypt('Welcome1');
+	    $manager->email = 'user';
+	    $manager->password = bcrypt('welcome');
 	    $manager->save();
 	    $manager->roles()->attach($user_role);
 		$manager->permissions()->attach($dashboard_view);
