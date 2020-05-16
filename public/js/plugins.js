@@ -213,7 +213,7 @@ $(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Natkamol\Desktop\laravel-starter-usersroles\resources\js\plugins.js */"./resources/js/plugins.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\home_portal\resources\js\plugins.js */"./resources/js/plugins.js");
 
 
 /***/ })
