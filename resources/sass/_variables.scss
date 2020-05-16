@@ -1,0 +1,285 @@
+
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: "Nunito", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+$zindex-navbar:            1000 !default;
+$zindex-dropdown:          1000 !default;
+$zindex-popover:           1060 !default;
+$zindex-tooltip:           1070 !default;
+$zindex-navbar-fixed:      1030 !default;
+$zindex-modal-background:  1040 !default;
+$zindex-modal:             1050 !default;
+
+//== Modals
+//
+//##
+
+//** Padding applied to the modal body
+$modal-inner-padding:         15px !default;
+
+//** Padding applied to the modal title
+$modal-title-padding:         15px !default;
+//** Modal title line-height
+$modal-title-line-height:     $line-height-base !default;
+
+//** Background color of modal content area
+$modal-content-bg:                             #fff !default;
+//** Modal content border color
+$modal-content-border-color:                   rgba(0,0,0,.2) !default;
+//** Modal content border color **for IE8**
+$modal-content-fallback-border-color:          #999 !default;
+
+//** Modal backdrop background color
+$modal-backdrop-bg:           #000 !default;
+//** Modal backdrop opacity
+$modal-backdrop-opacity:      .5 !default;
+//** Modal header border color
+$modal-header-border-color:   #e5e5e5 !default;
+//** Modal footer border color
+$modal-footer-border-color:   $modal-header-border-color !default;
+
+$modal-lg:                    900px !default;
+$modal-md:                    600px !default;
+$modal-sm:                    300px !default;
+
+$border-radius-base:        4px !default;
+$border-radius-large:       6px !default;
+$border-radius-small:       3px !default;
+
+// Colors
+// $light-blue: #3c8dbc;  //Primary
+// $aqua:       #00c0ef;  //Info
+// $blue: #3490dc;
+// $indigo: #6574cd;
+// $purple: #9561e2;
+// $pink: #f66D9b;
+// $red: #e3342f;
+// $orange: #f6993f;
+// $yellow: #ffed4a;
+// $green: #38c172;
+// $teal: #4dc0b5;
+// $cyan: #6cb2eb;
+$light-blue: #3c8dbc;  //Primary
+$red:        #dd4b39;  //Danger
+$green:      #00a65a;  //Success
+$aqua:       #00c0ef;  //Info
+$yellow:     #f39c12;  //Warning
+$blue:       #0073b7;
+$navy:       #001F3F;
+$teal:       #39CCCC;
+$olive:      #3D9970;
+$lime:       #01FF70;
+$orange:     #FF851B;
+$fuchsia:    #F012BE;
+$purple:     #605ca8;
+$maroon:     #D81B60;
+$black:      #111;
+$gray:       #d2d6de;
+
+//BOXES
+//--------------------------------------------------------
+$box-border-color:  #f4f4f4;
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+//Side bar and logo width
+$sidebar-width: 230px;
+//Boxed layout maximum width
+$boxed-layout-max-width: 1024px;
+//When the logo should go to the top of the screen
+$screen-header-collapse: $screen-xs-max;
+
+//Transition global options
+$transition-speed: .3s;
+$transition-fn:    ease-in-out;
+
+@mixin transition-transform($transition...) {
+    -webkit-transition: -webkit-transform $transition;
+        -moz-transition: -moz-transform $transition;
+            -o-transition: -o-transform $transition;
+            transition: transform $transition;
+}
+
+@mixin translate($x, $y) {
+    -webkit-transform: translate($x, $y);
+        -ms-transform: translate($x, $y); // IE9 only
+            -o-transform: translate($x, $y);
+            transform: translate($x, $y);
+}
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: " "; // 1
+        display: table; // 2
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin rotate($degrees) {
+    -webkit-transform: rotate($degrees);
+        -ms-transform: rotate($degrees); // IE9 only
+            -o-transform: rotate($degrees);
+            transform: rotate($degrees);
+}
+
+//border radius creator
+@mixin border-radius-same($radius) {
+    border-radius: $radius;
+}
+
+@mixin box-shadow($shadow...) {
+    -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+            box-shadow: $shadow;
+}
+
+//Gradient background
+@mixin gradient($color: #F5F5F5, $start: #EEE, $stop: #FFF) {
+    background: $color;
+    background: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      color-stop(0, $start),
+      color-stop(1, $stop));
+    background: -ms-linear-gradient(bottom,
+      $start,
+      $stop);
+    background: -moz-linear-gradient(center bottom,
+      $start 0%,
+      $stop 100%);
+    background: -o-linear-gradient($stop,
+      $start);  
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($stop)}', endColorstr='#{ie-hex-str($start)}', GradientType=0); // IE9 and down
+}
+
+// Opacity
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    // IE8 filter
+    $opacity-ie: ($opacity * 100);
+    filter: alpha(opacity=$opacity-ie);
+}
+
+
+// Background colors
+.bg-red,
+.bg-yellow,
+.bg-aqua,
+.bg-blue,
+.bg-light-blue,
+.bg-green,
+.bg-navy,
+.bg-teal,
+.bg-olive,
+.bg-lime,
+.bg-orange ,
+.bg-fuchsia,
+.bg-purple,
+.bg-maroon,
+.bg-black,
+.bg-red-active,
+.bg-yellow-active,
+.bg-aqua-active,
+.bg-blue-active,
+.bg-light-blue-active,
+.bg-green-active,
+.bg-navy-active,
+.bg-teal-active,
+.bg-olive-active,
+.bg-lime-active,
+.bg-orange-active,
+.bg-fuchsia-active,
+.bg-purple-active,
+.bg-maroon-active,
+.bg-black-active {
+  color: #fff !important;
+}
+.bg-gray {
+  color: #000;
+  background-color: $gray !important;
+}
+.bg-black {
+  background-color: $black !important;
+}
+.bg-red {
+  background-color: $red !important;
+}
+.bg-yellow {
+  background-color: $yellow !important;
+}
+.bg-aqua {
+  background-color: $aqua !important;
+}
+.bg-blue {
+  background-color: $blue !important;
+}
+.bg-light-blue {
+  background-color: $light-blue !important;
+}
+.bg-green {
+  background-color: $green !important;
+}
+.bg-navy {
+  background-color: $navy !important;
+}
+.bg-teal {
+  background-color: $teal !important;
+}
+.bg-olive {
+  background-color: $olive !important;
+}
+.bg-lime {
+  background-color: $lime !important;
+}
+.bg-orange {
+  background-color: $orange !important;
+}
+.bg-fuchsia {
+  background-color: $fuchsia !important;
+}
+.bg-purple {
+  background-color: $purple !important;
+}
+.bg-maroon {
+  background-color: $maroon !important;
+}
