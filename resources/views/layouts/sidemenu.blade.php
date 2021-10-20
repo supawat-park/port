@@ -9,55 +9,34 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    
-    <!--     Fonts and icons     -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href=" {{asset('css/dataTables.bootstrap.css')}}">
-    <link rel="stylesheet" type="text/css" href=" {{asset('css/sweetalert.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <style type="text/css">
-        @font-face {
-            font-family: "WDB_Bangna-Regular";
-            src: url('{{asset('fonts/WDB_Bangna.ttf')}}');
-        }
-
-        body {
-            font-family: 'WDB_Bangna-Regular' !important;
-        }
-
-    </style>
-    @yield('css')
 </head>
 <body>
     <div id="app">
         <div class="d-flex" id="wrapper">
 
             <!-- Sidebar -->
-            <div class="border-right navbar-laravel" id="sidebar-wrapper">
-                <div class="sidebar-heading">Start Bootstrap </div>
-                {{-- <aside class="main-sidebar"> --}}
-                    <section class="sidebar">
-                        <ul class="sidebar-menu">
-                            {{renderMenuItems(getMenuItems())}}
-                        </ul>
-                    </section>
-                {{-- </aside> --}}
+            <div class="border-right" id="sidebar-wrapper">
+                <div class="sidebar-heading">Demo function lists</div>
+                {{renderMenuItems(getMenuItems())}}
             </div>
             <!-- /#sidebar-wrapper -->
 
             <!-- Page Content -->
             <div id="page-content-wrapper">
 
-                <nav class="navbar navbar-expand-lg navbar-light border-bottom navbar-laravel">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                     <button class="btn " id="menu-toggle"><span class="navbar-toggler-icon"></span></button>
                      <!-- Right Side Of Navbar -->
-                     {{-- <ul class="navbar-nav ml-auto"> --}}
-                    <ul class="nav justify-content-end ml-auto">
+                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
@@ -88,37 +67,23 @@
                     </ul>
                 </nav>
 
-                <div class="content-wrapper">
-                    <!-- Content Header (Page header) -->
-                    <section class="content-header">
-                        @yield('page-header')
-                        @if(Breadcrumbs::exists())
-                            {!! Breadcrumbs::render() !!}
-                        @endif
-                    </section>
-    
-                    <!-- Main content -->
-                    <section class="content">
-                        @include('layouts.partials.messages')
-                        @yield('content')
-                    </section><!-- /.content -->
-                </div><!-- /.content-wrapper -->
+                <div class="container-fluid">
+                    @yield('content')
+                </div>
             </div>
             <!-- /#page-content-wrapper -->
 
         </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" ></script>
-    <script src="{{ asset('js/jquery.js') }}" ></script>
-    <script src="{{ asset('js/jquery.dataTables.min.js') }}" ></script>
-    <script src="{{ asset('js/custom.js') }}" ></script>
-    <script src="{{ asset('js/template-script.js') }}" ></script>
-    <script src="{{ asset('js/backend-custom.js') }}" ></script>
-    
+    {{-- <script src="{{ asset('js/jquery.js') }}" ></script> --}}
+    {{-- <script src="{{ asset('js/jquery.dataTables.min.js') }}" ></script> --}}
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
     <!-- Menu Toggle Script -->
-    <script type="text/javascript">
+    <script>
         $(document).ready(function () {
             $("#menu-toggle").click(function(e) {
                 e.preventDefault();
@@ -126,8 +91,5 @@
             });
         });
     </script>
-    <script src="{{ asset('js/sweetalert.js') }}" ></script>
-    <script src="{{ asset('js/plugins.js') }}" ></script>
-    @yield('javascript')
 </body>
 </html>

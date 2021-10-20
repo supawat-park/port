@@ -18,27 +18,17 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/template', 'TemplateController@index')->name('template');
-Route::get('template/get-form/{name?}', 'TemplateFormController@create')->name('template.getform');
+Route::get('/crud', 'SimpleCRUDController@index')->name('crud');
+Route::post('/crud/manage-data', 'SimpleCRUDController@manageFormData');
 
-Route::group(['middleware' => 'role:admin','namespace'=>'Admin'], function() {
-    Route::post('user/get', 'User\UserTableController')->name('user.get');
-    Route::post('role/get', 'Role\RoleTableController')->name('role.get');
-    Route::post('permission/get', 'Permission\PermissionTableController')->name('permission.get');
-    
-    Route::resource('user', 'User\UserController');
-    /*
-    * Specific User
-    */
-    Route::group(['prefix' => 'user/{user}'], function () {
-        // Password
-        Route::get('password/change', 'User\UserPasswordController@edit')->name('user.change-password');
-        Route::patch('password/change', 'User\UserPasswordController@update')->name('user.change-password');
+Route::get('/regex', 'SimpleRegexController@index')->name('regex');
+Route::post('/regex-input', 'SimpleRegexController@checkString');
+
+Route::get('/factorial', 'SimpleFactorialController@index')->name('factorial');
+Route::post('/factorial-input', 'SimpleFactorialController@calculate');
+
+Route::group(['middleware' => 'role:admin'], function() {
+    Route::get('/admin', function() {
+        return 'Welcome Admin';
     });
-
-    Route::resource('role', 'Role\RoleController');
-    Route::resource('permission', 'Permission\PermissionController');
-
-    Route::resource('menu', 'Menu\MenuController');
-    Route::get('menu/get-form/{name?}', 'Menu\MenuFormController@create')->name('menu.getform');
 });

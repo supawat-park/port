@@ -6,15 +6,15 @@
  */
 
 require('./bootstrap');
-window.$ = require('jquery')
-window.JQuery = require('jquery')
+
+// window.$ = require("jquery");
+// window.JQuery = require("jquery");
 
 window.Vue = require('vue');
-import Flash from './components/Flash.vue';
-import PreviewComponent from './components/Preview.vue';
-import DynamicTableComponent from './components/DynamicTable.vue';
-import DynamicColumnComponent from './components/DynamicColumn.vue';
-import SelectDatasource from './components/pages/SelectDatasource.vue'
+import CrudComponent from './components/CrudComponent.vue';
+import CrudModal from './components/CrudModal.vue';
+import RegexComponent from './components/RegexComponent.vue';
+import FactorialComponent from './components/FactorialComponent.vue';
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -22,18 +22,14 @@ import SelectDatasource from './components/pages/SelectDatasource.vue'
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-// Vue.component('flash', require('./components/Flash.vue'));
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
-Vue.prototype.$eventHub = new Vue();
+// Vue.component('crud-component', require('./components/CRUDComponent.vue'));
 
 const app = new Vue({
     el: '#app',
     components: {
-        Flash: Flash,
-        PreviewComponent: PreviewComponent,
-        SelectDatasource: SelectDatasource,
-        DynamicTableComponent: DynamicTableComponent,
-        DynamicColumnComponent: DynamicColumnComponent
+        CrudComponent: CrudComponent,
+        CrudModal: CrudModal,
+        RegexComponent: RegexComponent,
+        FactorialComponent: FactorialComponent
     }
 });
-

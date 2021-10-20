@@ -2,14 +2,11 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Models\User;
+use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
-use App\Http\Requests\Auth\RegisterRequest;
-use App\Repositories\Auth\UserRepository;
-use App\Events\Admin\User\UserCreated;
 
 class RegisterController extends Controller
 {
@@ -31,34 +28,16 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    // protected $redirectTo = '/home';
+    protected $redirectTo = '/home';
 
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    // public function __construct()
-    // {
-    //     $this->middleware('guest');
-    // }
-
-     /**
-     * @var UserRepository
-     */
-    protected $user;
-
-    /**
-     * RegisterController constructor.
-     *
-     * @param UserRepository $user
-     */
-    public function __construct(UserRepository $user)
+    public function __construct()
     {
-        // Where to redirect users after registering
-        $this->redirectTo = route('home');
-
-        $this->user = $user;
+        $this->middleware('guest');
     }
 
     /**
@@ -80,7 +59,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \App\Models\User
+     * @return \App\User
      */
     protected function create(array $data)
     {
@@ -89,18 +68,5 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
-    }
-
-    /**
-     * @param RegisterRequest $request
-     *
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
-     */
-    public function register(RegisterRequest $request)
-    {
-        access()->login($this->user->create($request->only('name', 'email', 'password')));
-        event(new UserCreated(access()->user()));
-
-        return redirect($this->redirectPath());
     }
 }

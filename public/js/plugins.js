@@ -213,7 +213,7 @@ $(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\home_portal\resources\js\plugins.js */"./resources/js/plugins.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\supawat-cv\resources\js\plugins.js */"./resources/js/plugins.js");
 
 
 /***/ })

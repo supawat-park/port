@@ -1,15 +1,5 @@
 <?php
 
-if (!function_exists('access')) {
-    /**
-     * Access (lol) the Access:: facade as a simple function.
-     */
-    function access()
-    {
-        return app('access');
-    }
-}
-
 if (!function_exists('isActiveMenuItem')) {
     /**
      * checks if current URL is of current menu/sub-menu.
@@ -72,7 +62,7 @@ if (!function_exists('getMenuItems')) {
      */
     function getMenuItems()
     {
-        $menus = App\Models\Menus::find(1);
+        $menus = App\Menus::find(1);
         
         if (!empty($menus) && !empty($menus->items)) {
             return json_decode($menus->items);

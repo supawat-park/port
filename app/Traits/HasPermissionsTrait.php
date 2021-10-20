@@ -1,151 +1,10 @@
 <?php
 namespace App\Traits;
 
-use App\Models\Permission;
-use App\Models\Role;
+use App\Permission;
+use App\Role;
 
 trait HasPermissionsTrait {
-
-	/**
-     * Attach multiple roles to a user.
-     *
-     * @param mixed $roles
-     *
-     * @return void
-     */
-    public function attachRoles($roles)
-    {
-        foreach ($roles as $role) {
-            $this->attachRole($role);
-        }
-    }
-
-	/**
-     * Alias to eloquent many-to-many relation's attach() method.
-     *
-     * @param mixed $role
-     *
-     * @return void
-     */
-    public function attachRole($role)
-    {
-        if (is_object($role)) {
-            $role = $role->getKey();
-        }
-
-        if (is_array($role)) {
-            $role = $role['id'];
-        }
-
-        $this->roles()->attach($role);
-    }
-
-	/**
-     * Detach multiple roles from a user.
-     *
-     * @param mixed $roles
-     *
-     * @return void
-     */
-    public function detachRoles($roles)
-    {
-        foreach ($roles as $role) {
-            $this->detachRole($role);
-        }
-	}
-	
-	/**
-     * Alias to eloquent many-to-many relation's detach() method.
-     *
-     * @param mixed $role
-     *
-     * @return void
-     */
-    public function detachRole($role)
-    {
-        if (is_object($role)) {
-            $role = $role->getKey();
-        }
-
-        if (is_array($role)) {
-            $role = $role['id'];
-        }
-
-        $this->roles()->detach($role);
-    }
-    
-    public function getRole(){
-        return $this->roles()->first()->name;
-    }
-
-
-    /**
-     * Attach multiple Permissions to a user.
-     *
-     * @param mixed $permissions
-     *
-     * @return void
-     */
-    public function attachPermissions($permissions)
-    {
-        foreach ($permissions as $permission) {
-            $this->attachPermission($permission);
-        }
-    }
-
-    /**
-     * Alias to eloquent many-to-many relation's attach() method.
-     *
-     * @param mixed $permission
-     *
-     * @return void
-     */
-    public function attachPermission($permission)
-    {
-        if (is_object($permission)) {
-            $permission = $permission->getKey();
-        }
-
-        if (is_array($permission)) {
-            $permission = $permission['id'];
-        }
-
-        $this->permissions()->attach($permission);
-    }
-
-    /**
-     * Detach multiple permissions from current role.
-     *
-     * @param mixed $permissions
-     *
-     * @return void
-     */
-    public function detachPermissions($permissions)
-    {
-        foreach ($permissions as $permission) {
-            $this->detachPermission($permission);
-        }
-    }
-
-    /**
-     * Detach permission form current User.
-     *
-     * @param object|array $permission
-     *
-     * @return void
-     */
-    public function detachPermission($permission)
-    {
-        if (is_object($permission)) {
-            $permission = $permission->getKey();
-        }
-
-        if (is_array($permission)) {
-            $permission = $permission['id'];
-        }
-
-        $this->permissions()->detach($permission);
-    }
 
 	public function givePermissionsTo(... $permissions) {
 		$permissions = $this->getAllPermissions($permissions);
@@ -181,6 +40,8 @@ trait HasPermissionsTrait {
 		}
 		return false;
 	}
+
+
 
 	public function hasRole( ... $roles ) {
 		foreach ($roles as $role) {
