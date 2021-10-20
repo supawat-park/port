@@ -17,12 +17,6 @@ class SimpleCRUDRepository extends BaseRepository
     {
         $data = Items::where('is_active', 1)
             ->get();
-        
-        // foreach($data as $_data){
-        //     $_data->staffName = $utility->getStaffDataById($_data->staff_id)['eng_name'];
-        //     $_data->estimatedValue = number_format($_data->estimated_value, 2, ".", ",");
-        // }
-        
         return $data;
     }
 
@@ -30,7 +24,6 @@ class SimpleCRUDRepository extends BaseRepository
     {
         try {
             DB::transaction(function () use ($input) {
-                // $lineNoRunning = GeabDetail::where('document_no', $input['documentNo'])->max('line_no');
                 $itemDetail = Items::class;
                 $itemDetail = new $itemDetail();
                 $itemDetail->name = $input['nameModel'];
@@ -61,8 +54,7 @@ class SimpleCRUDRepository extends BaseRepository
             });
             return 'true';
         } catch (Exception $e) {
-            Session::put('globalToastType', 'error');
-            Session::put('globalToastTitle', 'Somthing went wrong. ' . $e->getMessage());
+            throw new GeneralException($e->getMessage());
         }
     }
 

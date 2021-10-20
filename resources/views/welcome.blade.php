@@ -31,18 +31,13 @@
             <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
                 <div class="container">
                     <div class="navbar-translate">
-                        <a class="btn btn-primary" href="{{ url('/home') }}" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Sample Code 
-                            <i class="fa fa-cogs"
-                            aria-hidden="true"></i></a>
-                        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navigation" aria-controls="navigation" aria-expanded="false"
-                            aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span
-                                class="navbar-toggler-bar bar2"></span><span
-                                class="navbar-toggler-bar bar3"></span></button>
+                        <a class="btn btn-primary" href="{{ url('/home') }}" data-aos="zoom-in"
+                            data-aos-anchor="data-aos-anchor">Sample Code
+                            <i class="fa fa-cogs" aria-hidden="true"></i></a>
                     </div>
                     <div class="collapse navbar-collapse justify-content-end" id="navigation">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#about" >About</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
                             <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
                             <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a>
                         </ul>
@@ -57,25 +52,27 @@
                 <div class="wrapper">
                     <div class="page-header page-header-small" filter-color="green">
                         <div class="page-header-image" data-parallax="true"
-                            style="background-image: url('images/cc-bg-1.jpg')"></div>
+                            style="background-image: url('images/cover.jpg')"></div>
                         <div class="container">
                             <div class="content-center">
                                 <div class="cc-profile-image"><a style="cursor: default;"><img src="images/supawat.jpg"
                                             alt="Image" /></a></div>
                                 <div class="h2 title">Supawat Pothisomphop</div>
                                 <p class="category text-white">Web Developer, IT Consultant</p>
-                                <a class="btn btn-primary" href="files/Supawat_resume_skillset.pdf"
-                                    data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download Full CV</a>
+                                <a class="btn btn-primary" href="files/Supawat_resume_skillset.pdf" data-aos="zoom-in"
+                                    data-aos-anchor="data-aos-anchor">Download Full CV</a>
                             </div>
                         </div>
                         <div class="section">
                             <div class="container">
                                 <div class="button-container">
-                                    <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/Zloctear" target="_blank" rel="tooltip" ><i
+                                    <a class="btn btn-default btn-round btn-lg btn-icon"
+                                        href="https://www.facebook.com/Zloctear" target="_blank" rel="tooltip"><i
                                             class="fa fa-facebook"></i></a>
-                                    <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.instagram.com/park_lightyear/" target="_blank" rel="tooltip"
-                                        ><i class="fa fa-instagram"></i></a>
-                                    </div>
+                                    <a class="btn btn-default btn-round btn-lg btn-icon"
+                                        href="https://www.instagram.com/park_lightyear/" target="_blank"
+                                        rel="tooltip"><i class="fa fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -90,8 +87,11 @@
                                     <div class="h4 mt-0 title">About</div>
                                     <p>Hello. I am Supawat Pothisomphop [Park].
                                     </p>
-                                    <p>I graduated with a major multimedia technology. because first I interested in graphic and multimedia platform but after studying I think I'm not suitable in this way. then I become a developer and i can do it. I can self learning about programming language, framework and many tools.
-                                        </p>
+                                    <p>I graduated with a major multimedia technology. because first I interested in
+                                        graphic and multimedia platform but after studying I think I'm not suitable in
+                                        this way. then I become a developer and i can do it. I can self learning about
+                                        programming language, framework and many tools.
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12">
@@ -111,7 +111,8 @@
                                     </div>
                                     <div class="row mt-3">
                                         <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
-                                        <div class="col-sm-8">111/309 Soi Lasalle 32,  Sukhumvit 105 Road, Bangna, Bangkok 10260</div>
+                                        <div class="col-sm-8">111/309 Soi Lasalle 32, Sukhumvit 105 Road, Bangna,
+                                            Bangkok 10260</div>
                                     </div>
                                 </div>
                             </div>
@@ -126,37 +127,40 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="progress-container progress-primary"><span
-                                            class="progress-badge">HTML / CSS / JS</span>
+                                    <div class="progress-container progress-primary"><span class="progress-badge">HTML /
+                                            CSS / JS</span>
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-primary" data-aos="progress-full"
                                                 data-aos-offset="10" data-aos-duration="2000" role="progressbar"
                                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                style="width: 100%;"></div><span class="progress-value">Experienced</span>
+                                                style="width: 100%;"></div><span
+                                                class="progress-value">Experienced</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="progress-container progress-primary"><span
-                                            class="progress-badge">UI / UX </span>
+                                    <div class="progress-container progress-primary"><span class="progress-badge">UI /
+                                            UX </span>
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-primary" data-aos="progress-full"
                                                 data-aos-offset="10" data-aos-duration="2000" role="progressbar"
                                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                style="width: 75%;"></div><span class="progress-value">Intermediate</span>
+                                                style="width: 75%;"></div><span
+                                                class="progress-value">Intermediate</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="progress-container progress-primary"><span
-                                            class="progress-badge">PHP [Laravel]</span>
+                                    <div class="progress-container progress-primary"><span class="progress-badge">PHP
+                                            [Laravel]</span>
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-primary" data-aos="progress-full"
                                                 data-aos-offset="10" data-aos-duration="2000" role="progressbar"
                                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                style="width: 75%;"></div><span class="progress-value">Intermediate</span>
+                                                style="width: 75%;"></div><span
+                                                class="progress-value">Intermediate</span>
                                         </div>
                                     </div>
                                 </div>
@@ -167,7 +171,8 @@
                                             <div class="progress-bar progress-bar-primary" data-aos="progress-full"
                                                 data-aos-offset="10" data-aos-duration="2000" role="progressbar"
                                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                style="width: 75%;"></div><span class="progress-value">Intermediate</span>
+                                                style="width: 75%;"></div><span
+                                                class="progress-value">Intermediate</span>
                                         </div>
                                     </div>
                                 </div>
@@ -180,7 +185,8 @@
                                             <div class="progress-bar progress-bar-primary" data-aos="progress-full"
                                                 data-aos-offset="10" data-aos-duration="2000" role="progressbar"
                                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                style="width: 75%;"></div><span class="progress-value">Intermediate</span>
+                                                style="width: 75%;"></div><span
+                                                class="progress-value">Intermediate</span>
                                         </div>
                                     </div>
                                 </div>
@@ -198,8 +204,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="progress-container progress-primary"><span
-                                            class="progress-badge">Agile / Scrum</span>
+                                    <div class="progress-container progress-primary"><span class="progress-badge">Agile
+                                            / Scrum</span>
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-primary" data-aos="progress-full"
                                                 data-aos-offset="10" data-aos-duration="2000" role="progressbar"
@@ -208,6 +214,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-md-6"><br>
+                                    <a class="btn btn-primary float-right" href="files/Supawat_resume_skillset.pdf"
+                                        data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Full skills in CV</a>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -229,7 +240,8 @@
                                 <div class="card-body">
                                     <div class="h5">Programmer</div>
                                     <p>
-                                        <li>Development 'Hybrid Application' with IONIC Framework [IONIC v.1 with AngularJS and IONIC v.2/3 with TypeScript].
+                                        <li>Development 'Hybrid Application' with IONIC Framework [IONIC v.1 with
+                                            AngularJS and IONIC v.2/3 with TypeScript].
                                         </li>
                                         <li>Use Magento framework to build e-commerce web from customer requirement.
                                         </li>
@@ -251,11 +263,14 @@
                                 <div class="card-body">
                                     <div class="h5">Assistant Consultant</div>
                                     <p>
-                                        <li>Development web application with .NET Framework in C# language [Internal E-customs web system for paperless flow].
+                                        <li>Development web application with .NET Framework in C# language [Internal
+                                            E-customs web system for paperless flow].
                                         </li>
-                                        <li>Development web application with .NET Framework in C# language [Government funding project].
+                                        <li>Development web application with .NET Framework in C# language [Government
+                                            funding project].
                                         </li>
-                                        <li>Work more about project management and development model performance [Waterfall, Agile, Scrum].
+                                        <li>Work more about project management and development model performance
+                                            [Waterfall, Agile, Scrum].
                                         </li>
                                         <li>Trained, coached, and supervised new staff members and co-op students.
                                         </li>
@@ -277,17 +292,22 @@
                                 <div class="card-body">
                                     <div class="h5">Consultant</div>
                                     <p>
-                                        <li>Development web application with 'Laravel Framework' and VueJS in two project.
+                                        <li>Development web application with 'Laravel Framework' and VueJS in two
+                                            project.
                                             <ol type="1">
-                                                <li>Web admin for Image upload and tracking maintenance ATM service / Cash refill in machine progress.</li>
-                                                <li>Web enhancement for paperless reimbursement, budget control approved and interface data with oracle ERP.</li>
-                                            </ol>  
+                                                <li>Web admin for Image upload and tracking maintenance ATM service /
+                                                    Cash refill in machine progress.</li>
+                                                <li>Web enhancement for paperless reimbursement, budget control approved
+                                                    and interface data with oracle ERP.</li>
+                                            </ol>
                                         </li>
-                                        <li>Proof of concept microsoft platform service such as Power Apps, Power Flow and Power BI.
+                                        <li>Proof of concept microsoft platform service such as Power Apps, Power Flow
+                                            and Power BI.
                                         </li>
                                         <li>Proof of concept microsoft DevOps.
                                         </li>
-                                        <li>Use Oracle E-bussiness suite for investigate ERP Process and interface data [via text/CSV file] to another process.
+                                        <li>Use Oracle E-bussiness suite for investigate ERP Process and interface data
+                                            [via text/CSV file] to another process.
                                         </li>
                                     </p>
                                 </div>
@@ -327,16 +347,24 @@
                                 <div class="card-body">
                                     <div class="h4 mt-0 title">Hobbies</div>
                                     <div class="row">
-                                        <div class="col-sm-12"><p class="text-uppercase">- Body Workout</p></div>
+                                        <div class="col-sm-12">
+                                            <p class="text-uppercase">- Body Workout</p>
+                                        </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-sm-12"><p class="text-uppercase">- Gaming</p></div>
+                                        <div class="col-sm-12">
+                                            <p class="text-uppercase">- Gaming</p>
+                                        </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-sm-12"><p class="text-uppercase">- Pet my cat</p></div>
+                                        <div class="col-sm-12">
+                                            <p class="text-uppercase">- Pet my cat</p>
+                                        </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-sm-12"><p class="text-uppercase">- Cryptocurrency trading</p></div>
+                                        <div class="col-sm-12">
+                                            <p class="text-uppercase">- Cryptocurrency trading</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -352,7 +380,8 @@
                                         <div class="col-sm-8">Basketball</div>
                                     </div>
                                     <div class="row mt-3">
-                                        <div class="col-sm-4"><strong class="text-uppercase">Food & Beverage:</strong></div>
+                                        <div class="col-sm-4"><strong class="text-uppercase">Food & Beverage:</strong>
+                                        </div>
                                         <div class="col-sm-8">Coffee, Soft drink, Dumplings</div>
                                     </div>
                                 </div>
