@@ -31,7 +31,6 @@
             <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
                 <div class="container">
                     <div class="navbar-translate">
-                        {{-- <a class="navbar-brand" href="#" rel="tooltip">Creative CV</a> --}}
                         <a class="btn btn-primary" href="{{ url('/home') }}" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Sample Code 
                             <i class="fa fa-cogs"
                             aria-hidden="true"></i></a>
@@ -45,10 +44,7 @@
                         <ul class="navbar-nav">
                             <li class="nav-item"><a class="nav-link smooth-scroll" href="#about" >About</a></li>
                             <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
-                            {{-- <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li> --}}
                             <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a>
-                            {{-- <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
-                            --}}
                         </ul>
                     </div>
                 </div>
@@ -68,9 +64,6 @@
                                             alt="Image" /></a></div>
                                 <div class="h2 title">Supawat Pothisomphop</div>
                                 <p class="category text-white">Web Developer, IT Consultant</p>
-                                {{-- <a
-                                    class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in"
-                                    data-aos-anchor="data-aos-anchor">Hire Me</a> --}}
                                 <a class="btn btn-primary" href="files/Supawat_resume_skillset.pdf"
                                     data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download Full CV</a>
                             </div>
@@ -80,10 +73,6 @@
                                 <div class="button-container">
                                     <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/Zloctear" target="_blank" rel="tooltip" ><i
                                             class="fa fa-facebook"></i></a>
-                                    {{-- <a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip"
-                                        title="Follow me on Twitter"><i class="fa fa-twitter"></i></a>
-                                    <a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip"
-                                        title="Follow me on Google+"><i class="fa fa-google-plus"></i></a> --}}
                                     <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.instagram.com/park_lightyear/" target="_blank" rel="tooltip"
                                         ><i class="fa fa-instagram"></i></a>
                                     </div>
@@ -102,8 +91,6 @@
                                     <p>Hello. I am Supawat Pothisomphop [Park].
                                     </p>
                                     <p>I graduated with a major multimedia technology. because first I interested in graphic and multimedia platform but after studying I think I'm not suitable in this way. then I become a developer and i can do it. I can self learning about programming language, framework and many tools.
-                                        {{-- <a href="https://templateflip.com/templates/creative-cv/" target="_blank">Learn
-                                            More</a> --}}
                                         </p>
                                 </div>
                             </div>
@@ -221,190 +208,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                {{-- <div class="col-md-6">
-                                    <div class="progress-container progress-primary"><span
-                                            class="progress-badge">Apache</span>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full"
-                                                data-aos-offset="10" data-aos-duration="2000" role="progressbar"
-                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                style="width: 50%;"></div><span class="progress-value">Basic</span>
-                                        </div>
-                                    </div>
-                                </div> --}}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {{-- <div class="section" id="portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 ml-auto mr-auto">
-                            <div class="h4 text-center mb-4 title">Portfolio</div>
-                            <div class="nav-align-center">
-                                <ul class="nav nav-pills nav-pills-primary" role="tablist">
-                                    <li class="nav-item"><a class="nav-link active" data-toggle="tab"
-                                            href="#web-development" role="tablist"><i class="fa fa-laptop"
-                                                aria-hidden="true"></i></a></li>
-                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#graphic-design"
-                                            role="tablist"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
-                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Photography"
-                                            role="tablist"><i class="fa fa-camera" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-content gallery mt-5">
-                        <div class="tab-pane active" id="web-development">
-                            <div class="ml-auto mr-auto">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                                                <figure class="cc-effect"><img src="images/project-1.jpg" alt="Image" />
-                                                    <figcaption>
-                                                        <div class="h4">Recent Project</div>
-                                                        <p>Web Development</p>
-                                                    </figcaption>
-                                                </figure>
-                                            </a></div>
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                                                <figure class="cc-effect"><img src="images/project-2.jpg" alt="Image" />
-                                                    <figcaption>
-                                                        <div class="h4">Startup Project</div>
-                                                        <p>Web Development</p>
-                                                    </figcaption>
-                                                </figure>
-                                            </a></div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                                                <figure class="cc-effect"><img src="images/project-3.jpg" alt="Image" />
-                                                    <figcaption>
-                                                        <div class="h4">Food Order Project</div>
-                                                        <p>Web Development</p>
-                                                    </figcaption>
-                                                </figure>
-                                            </a></div>
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                                                <figure class="cc-effect"><img src="images/project-4.jpg" alt="Image" />
-                                                    <figcaption>
-                                                        <div class="h4">Web Advertising Project</div>
-                                                        <p>Web Development</p>
-                                                    </figcaption>
-                                                </figure>
-                                            </a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="graphic-design" role="tabpanel">
-                            <div class="ml-auto mr-auto">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
-                                                <figure class="cc-effect"><img src="images/graphic-design-1.jpg"
-                                                        alt="Image" />
-                                                    <figcaption>
-                                                        <div class="h4">Triangle Pattern</div>
-                                                        <p>Graphic Design</p>
-                                                    </figcaption>
-                                                </figure>
-                                            </a></div>
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
-                                                <figure class="cc-effect"><img src="images/graphic-design-2.jpg"
-                                                        alt="Image" />
-                                                    <figcaption>
-                                                        <div class="h4">Abstract Umbrella</div>
-                                                        <p>Graphic Design</p>
-                                                    </figcaption>
-                                                </figure>
-                                            </a></div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
-                                                <figure class="cc-effect"><img src="images/graphic-design-3.jpg"
-                                                        alt="Image" />
-                                                    <figcaption>
-                                                        <div class="h4">Cube Surface Texture</div>
-                                                        <p>Graphic Design</p>
-                                                    </figcaption>
-                                                </figure>
-                                            </a></div>
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
-                                                <figure class="cc-effect"><img src="images/graphic-design-4.jpg"
-                                                        alt="Image" />
-                                                    <figcaption>
-                                                        <div class="h4">Abstract Line</div>
-                                                        <p>Graphic Design</p>
-                                                    </figcaption>
-                                                </figure>
-                                            </a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="Photography" role="tabpanel">
-                            <div class="ml-auto mr-auto">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                                                <figure class="cc-effect"><img src="images/photography-1.jpg"
-                                                        alt="Image" />
-                                                    <figcaption>
-                                                        <div class="h4">Photoshoot</div>
-                                                        <p>Photography</p>
-                                                    </figcaption>
-                                                </figure>
-                                            </a></div>
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                                                <figure class="cc-effect"><img src="images/photography-3.jpg"
-                                                        alt="Image" />
-                                                    <figcaption>
-                                                        <div class="h4">Wedding Photoshoot</div>
-                                                        <p>Photography</p>
-                                                    </figcaption>
-                                                </figure>
-                                            </a></div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                                                <figure class="cc-effect"><img src="images/photography-2.jpg"
-                                                        alt="Image" />
-                                                    <figcaption>
-                                                        <div class="h4">Beach Photoshoot</div>
-                                                        <p>Photography</p>
-                                                    </figcaption>
-                                                </figure>
-                                            </a></div>
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                                                <figure class="cc-effect"><img src="images/photography-4.jpg"
-                                                        alt="Image" />
-                                                    <figcaption>
-                                                        <div class="h4">Nature Photoshoot</div>
-                                                        <p>Photography</p>
-                                                    </figcaption>
-                                                </figure>
-                                            </a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
             <div class="section" id="experience">
                 <div class="container cc-experience">
                     <div class="h4 text-center mb-4 title">Work Experience</div>
@@ -510,15 +318,52 @@
                     </div>
                 </div>
             </div>
+            <div class="section">
+                <div class="container">
+                    <div class="h4 text-center mb-4 title">Hobbies & Interests</div>
+                    <div class="card" data-aos="fade-up" data-aos-offset="10">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="card-body">
+                                    <div class="h4 mt-0 title">Hobbies</div>
+                                    <div class="row">
+                                        <div class="col-sm-12"><p class="text-uppercase">- Body Workout</p></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12"><p class="text-uppercase">- Gaming</p></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12"><p class="text-uppercase">- Pet my cat</p></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12"><p class="text-uppercase">- Cryptocurrency trading</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="card-body">
+                                    <div class="h4 mt-0 title">Interests</div>
+                                    <div class="row mt-3">
+                                        <div class="col-sm-4"><strong class="text-uppercase">K-POP Music:</strong></div>
+                                        <div class="col-sm-8">Blackpink, Twice, Aespa, Bigbang, Ikon</div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-sm-4"><strong class="text-uppercase">Sport:</strong></div>
+                                        <div class="col-sm-8">Basketball</div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-sm-4"><strong class="text-uppercase">Food & Beverage:</strong></div>
+                                        <div class="col-sm-8">Coffee, Soft drink, Dumplings</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <footer class="footer">
-        {{-- <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook fa-2x "
-                    aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i
-                    class="fa fa-twitter fa-2x " aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link"
-                href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a><a
-                class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a>
-        </div> --}}
         <div class="text-center text-muted">
             <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com"
                     target="_blank">TemplateFlip</a></p>
